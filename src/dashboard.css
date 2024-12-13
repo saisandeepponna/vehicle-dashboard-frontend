@@ -1,0 +1,80 @@
+.dashboard {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 45px;
+  }
+
+
+  
+  /* Top Row */
+  .top-row {
+    display: flex;
+    text-align: center; 
+    gap: 50px;
+    justify-content: flex-start; 
+    width: 100%; 
+    border-bottom: 1px solid grey;
+  }
+
+  .icon {
+    width: 65px;
+    height: 60px;
+  }
+  
+
+
+/* Gauges Section */
+  .gauges-section {
+      display: flex;
+      gap: 100px;
+      width: 100%;
+      justify-content: center; 
+      align-items: center;     
+      border-bottom: 1px solid grey;      
+  }
+
+
+  .dashboard-bottom {
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+  .dashboard-container {
+    display: flex; /* Use flexbox to align elements side by side */
+    gap: 100px; /* Add space between the two components */
+}
+
+  .data-card {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+ 
+  
+  /* Slider Section */
+  .slider-section {
+    text-align: center;
+  }
+  
+  .slider {
+    width: 80%;
+    margin: 10px 0;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ 
+
+  
