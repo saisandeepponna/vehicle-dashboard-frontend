@@ -4,8 +4,11 @@ The frontend of the Vehicle Dashboard Interface is built with React, providing a
 
 
 # Technologies Used:
+
 React: The frontend of the application is built using React to create a dynamic and responsive user interface.
+
 CSS : Styling is achieved using CSS  to ensure a visually appealing and easy-to-navigate layout that mimics a vehicle dashboard.
+
 Axios: Axios is used to make HTTP requests to the backend API, allowing the frontend to interact with the MySQL RDS database on AWS in real-time and update the UI accordingly.
 
 # Setup
