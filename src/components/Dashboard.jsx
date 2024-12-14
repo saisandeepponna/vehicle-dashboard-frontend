@@ -22,6 +22,7 @@ const Dashboard = () => {
   const [isSliderDisabled, setIsSliderDisabled] = useState(false);
   const intervalRef = useRef(null);
   const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
+  
  
   useEffect(() => {
     fetchIndicatorsData();
@@ -100,8 +101,9 @@ const Dashboard = () => {
   const fetchIndicatorsData = async () => {
     try {
       const response = await axios.get(`${apiBaseUrl}/indicators`);
-      setIndicators(JSON.parse(response.data.body));
-      console.log('response is '+response.data.body);
+      console.log(response.data)
+      setIndicators(response.data);
+      
     } catch (error) {
       console.error("Error fetching indicators data", error);
     }
@@ -110,7 +112,7 @@ const Dashboard = () => {
   const fetchMotorData = async () => {
     try {
       const response = await axios.get(`${apiBaseUrl}/motor-data`);
-      const motorData = JSON.parse(response.data.body);
+      const motorData = response.data;
 
       setMotorData(motorData);
       setIsCharging(motorData.charging_state);
